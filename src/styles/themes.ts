@@ -6,7 +6,7 @@ export const themes = {
         card: "#2B6A78",
     },
     dark: {
-        background: "#5e637c",
+        background: "#333333",
         accent: "#4942E4",
         text: "#E8E6E6",
         card: "#2F334B",
