@@ -29,15 +29,25 @@ export const ContainerLinks = styled.div`
     > a {
         display: flex;
         justify-content: center;
+        text-decoration: none;
         align-items: center;
         color: var(--text);
+        padding: 4px;
+        border-radius: 4px;
+        border: 2px solid #262525;
+        transition: all 0.2s;
+
+        &:hover {
+            background-color: var(--text);
+            color: var(--background);
+        }
     }
 `;
 
 export const Table = styled.table`
     width: 20%;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
     border-collapse: collapse;
     border-spacing: 0;
     color: var(--text);

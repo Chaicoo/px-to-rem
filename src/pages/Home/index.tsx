@@ -18,6 +18,10 @@ export const Home: React.FC = () => {
                 individualmente. O rem oferece uma abordagem escalável e
                 flexível para o dimensionamento de elementos em CSS.
             </p>
+            <ContainerLinks>
+                <Link to="/pxtorem">Px to Rem</Link>
+                <Link to="/remtopx">Rem to Px</Link>
+            </ContainerLinks>
             <Table>
                 <thead>
                     <tr>
@@ -40,11 +44,6 @@ export const Home: React.FC = () => {
                     </tr>
                 </tbody>
             </Table>
-
-            <ContainerLinks>
-                <Link to="/pxtorem">Px to Rem</Link>
-                <Link to="/remtopx">Rem to Px</Link>
-            </ContainerLinks>
         </Container>
     );
 };
