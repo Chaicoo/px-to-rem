@@ -16,9 +16,9 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
         <Container>
             <Link to="https://github.com/Chaicoo/px-to-rem">Px to REM</Link>
             {themeName === "light" ? (
-                <SunIcon onClick={toggleTheme} />
-            ) : (
                 <MoonIcon onClick={toggleTheme} />
+            ) : (
+                <SunIcon onClick={toggleTheme} />
             )}
         </Container>
     );
