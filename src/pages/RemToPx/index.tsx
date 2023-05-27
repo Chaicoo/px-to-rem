@@ -52,7 +52,7 @@ export const RemToPx: React.FC = () => {
             </ContainerInputs>
 
             <ContainerLinks>
-                <Link to="/">Ínicio</Link>
+                <Link to="/">Início</Link>
             </ContainerLinks>
         </Container>
     );
