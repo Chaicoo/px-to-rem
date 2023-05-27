@@ -53,8 +53,7 @@ export const PxToRem: React.FC = () => {
             </ContainerInputs>
 
             <ContainerLinks>
-                <Link to="/">Home</Link>
-                <Link to="/remtopx">RemToPx</Link>
+                <Link to="/">Ínicio</Link>
             </ContainerLinks>
         </Container>
     );
