@@ -17,6 +17,16 @@ export const Container = styled.div`
         width: 40%;
         margin: 0 auto;
     }
+
+    @media (max-width: 768px) {
+        > h1 {
+            font-size: 36px;
+        }
+
+        > p {
+            width: 85%;
+        }
+    }
 `;
 
 export const ContainerLinks = styled.div`
@@ -63,5 +73,9 @@ export const Table = styled.table`
         padding: 4px;
         text-align: center;
         border: 1px solid #262525;
+    }
+
+    @media (max-width: 768px) {
+        width: 85%;
     }
 `;

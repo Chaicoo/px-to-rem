@@ -18,6 +18,10 @@ export const Container = styled.div`
             opacity: 0.8;
         }
     }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+    }
 `;
 
 const iconCSS = css`

@@ -9,6 +9,12 @@ export const Container = styled.div`
         color: var(--text);
         margin-bottom: 30px;
     }
+
+    @media (max-width: 768px) {
+        > h1 {
+            font-size: 36px;
+        }
+    }
 `;
 
 export const ContainerLinks = styled.div`
@@ -47,6 +53,15 @@ export const ContainerInputs = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 30px;
+
+        span{
+            display: none;
+        }
     }
 `;
 
@@ -92,4 +107,10 @@ const iconCSS = css`
 export const SwitchIcon = styled(FiRefreshCw)`
     ${iconCSS}
     margin-top: 36px;
+
+    @media (max-width: 768px) {
+        margin-top: 0;
+        width: 28px;
+        height: 28px;
+    }
 `;

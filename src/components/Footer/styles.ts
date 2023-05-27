@@ -11,6 +11,10 @@ export const Container = styled.div`
     position: fixed;
     bottom: 0;
     left: 0;
+
+    @media (max-width: 768px) {
+        padding: 24px 16px;
+    }
 `;
 
 export const Line = styled.div`
