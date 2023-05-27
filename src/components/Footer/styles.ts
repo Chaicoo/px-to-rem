@@ -19,8 +19,25 @@ export const Line = styled.div`
     border-top: 1px solid var(--card);
 `;
 
-export const HeartIcon = styled(AiFillHeart)`
+export const MadeBy = styled.div`
+    font-size: 14px;
+    color: var(--text);
     margin-top: 24px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+
+    > a {
+        transition: opacity 0.2s;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+`;
+
+export const HeartIcon = styled(AiFillHeart)`
     width: 28px;
     height: 28px;
     flex-shrink: 0;

@@ -7,6 +7,10 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    ::selection{
+        background: var(--accent);
+    }
+
     html{
         min-height: 100%;
         background: var(--background);
@@ -17,7 +21,7 @@ export const GlobalStyles = createGlobalStyle`
         background: none;
         font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
         color: var(--black);
-		transition: color 0.2s ease-out;
+		transition: color 0.8s ease-out;
     }
 
     ul{

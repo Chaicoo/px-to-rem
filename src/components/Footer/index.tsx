@@ -1,12 +1,17 @@
 import React from "react";
-
-import { Container, Line, HeartIcon } from "./styles";
+import { Link } from "react-router-dom";
+import { Container, Line, HeartIcon, MadeBy} from "./styles";
 
 export const Footer: React.FC = () => {
     return (
         <Container>
             <Line />
-            <HeartIcon />
+            <MadeBy>
+                <span>Feito com</span>
+                <HeartIcon />
+                <span>por </span>
+                <Link to="https://github.com/Chaicoo">Francisco</Link>
+            </MadeBy>
         </Container>
     );
 };

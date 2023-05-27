@@ -1,5 +1,6 @@
 import { Container, SunIcon, MoonIcon } from "./styles";
 import { ThemeName } from "../../styles/themes";
+import { Link } from "react-router-dom";
 
 interface Props {
     themeName: ThemeName;
@@ -13,12 +14,12 @@ export const Header: React.FC<Props> = ({ themeName, setThemeName }) => {
 
     return (
         <Container>
+            <Link to="https://github.com/Chaicoo/px-to-rem">Px to REM</Link>
             {themeName === "light" ? (
                 <SunIcon onClick={toggleTheme} />
             ) : (
                 <MoonIcon onClick={toggleTheme} />
             )}
-            <span className="tittle">Header</span>
         </Container>
     );
 };
