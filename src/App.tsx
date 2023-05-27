@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import GlogalStyles from "./styles/GlobalStyles";
 import { Header, Footer } from "./components";
-import { Home, About } from "./pages";
+import { Home, PxToRem, RemToPx } from "./pages";
 import { ThemeName, themes } from "./styles/themes";
 
 function App() {
@@ -16,7 +16,8 @@ function App() {
                 <Header themeName={themeName} setThemeName={setThemeName} />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="about" element={<About />} />
+                    <Route path="pxtorem" element={<PxToRem />} />
+                    <Route path="remtopx" element={<RemToPx />} />
                 </Routes>
                 <Footer />
                 <GlogalStyles />
